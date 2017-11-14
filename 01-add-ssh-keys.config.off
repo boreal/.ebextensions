@@ -1,0 +1,15 @@
+files:
+  /home/ec2-user/.ssh/extra_authorized_keys:
+    mode: "000400"
+    owner: ec2-user
+    group: ec2-user
+    content: |
+      ssh-rsa AAAB3N...QcGskx keyname
+      ssh-rsa BBRdt5...LguTtp another-key
+commands:
+  01_append_keys:
+    cwd: /home/ec2-user/.ssh/
+    command: sort -u extra_authorized_keys authorized_keys -o authorized_keys
+  99_rm_extra_keys:
+    cwd: /home/ec2-user/.ssh/
+    command: rm extra_authorized_keys
