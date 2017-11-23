@@ -1,7 +1,7 @@
 option_settings:
   aws:elb:listener:443:
     ListenerProtocol: HTTPS
-    SSLCertificateId: arn:aws:acm:ca-central-1:248072610187:certificate/4c3bae5e-3ae2-4237-9b04-02d1f210e6cc
+    SSLCertificateId: arn:aws:acm:ca-central-1:165779073758:certificate/442807f4-5ba9-4333-9ed9-9743a9fc5616
     InstancePort: 8443
     InstanceProtocol: HTTP
   aws:elb:listener:80:
@@ -18,5 +18,5 @@ option_settings:
     Availability Zones: Any
     Cooldown: '360'
     Custom Availability Zones: ''
-    MaxSize: '8'
+    MaxSize: '4'
     MinSize: '1'
