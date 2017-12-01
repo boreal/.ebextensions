@@ -1,4 +1,4 @@
 option_settings:
   aws:elasticbeanstalk:application:environment: 
-    NPM_USE_PRODUCTION: false
+    NPM_USE_PRODUCTION: true
     NODE_ENV: production
